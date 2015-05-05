@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Site about Games that inspire. This month dedicates to Game Bloodborne.">
+    <meta name="keywords" content="hkeper, game, games, bloodborne, site about games, interesting games">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>gameInspiration</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+    #brand{
+      font-family: "Slabo 27px", serif;
+      font-size: 150%;
+      font-weight: bold;
+    }
+    #main{
+      background-image: url("images/background/main2.jpg");
+      /*background-image: url("images/mainBackground.png");*/
+      background-attachment: fixed;
+      /*background-size: cover;*/
+/*      height: auto;
+      width: 100%;*/
+      padding: 0;
+    }
+    /*#home{
+      background-image: url("images/backgroundHome1.jpg"); 
+    }    
+    #weapons{
+      background-image: url("images/backgroundHome.jpg");
+      background-attachment: fixed;
+    }
+    #creatures{
+      background-image: url("images/backgroundCreatures3.jpg");
+    }
+    #media{
+      background-image: url("images/backgroundHome2.jpg");
+    }*/
+    .border{
+      min-height: 30px;
+      background-color: black;
+    }
+    .borderUpRow{      
+      top:0;
+      margin-top: -3px;       
+    }
+    .borderUp{
+      min-height: 70px;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)); 
+    }
+    .borderDownRow{
+      margin-top: 5%;      
+      bottom: 0;
+    }    
+    .borderDown{
+      min-height: 70px;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+    }
+    .contentContainer{
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      background-size: cover; 
+      width: 100%;
+    }
+    #brandImage{
+      max-width: 200px;
+      margin-top: -12px;
+    }
+    .marginTop{
+      margin-top: 50px;
+    }
+    .marginOnTop{
+      margin-top: 10px;
+    }
+    .paddingOnTop{
+      padding-top: 10px;
+    }
+    .paddingBottom:{
+      padding-bottom: 50px;
+    }
+    .marginBottom{
+      margin-bottom: 20px;      
+    }
+    .backgroundTrans{
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+    .backgroundTransW{
+      background-color: rgba(0, 0, 0, 0.8);
+      padding-bottom: 3%;
+     margin-top: 0;      
+    }
+    .center{
+      text-align: center;
+    }
+    .pleer{
+      width: 100%;  
+    }
+    .noPadding{
+      padding: 0;
+    }
+    .noPaddingRight{
+      padding-right: 0;
+    }
+    .noPaddingLeft{
+      padding-left: 0;
+    }
+    .noMargin{
+      margin: 0;
+    }
+    .firstCol{
+      margin-top: 100px;
+    }
+    .pleerAddon{
+      padding: 0 5px 10px 5px;
+      color: #CCCCCC;
+    }
+    .title{
+      margin: 40px 0 0 0;
+    }
+    #titleImg{
+      width: 95%;
+      height: auto;
+    }
+    #myTab{
+      text-align: center;
+    }
+    #myTab > li{
+      display: inline-block;
+      float: none;
+      margin: 0 0 0 0;
+    }
+    #myTab > li.active > a{
+      color: white;
+      margin-top: 30px;
+    }
+    #detailsTab{
+      text-align: center;      
+    }
+    #detailsTab > li{
+      display: inline-block;
+      float: none;
+      margin: 0 0 0 0;
+    }
+    #detailsTab > li.active > a{
+      color: white;
+      margin-top: 30px;
+    }
+    .styleA{
+      color: #BBBBBB;
+      font-weight: bold;
+    }
+    .styleW{
+      color:#BBBBBB;
+      font-weight: bold;
+    }
+    #mediaContainer{
+      color: gray;
+    }
+    .onlyTopMargin{
+      margin: 40px 0 0 0;
+    }
+    .textColor{
+      color:#CCCCCC;
+    }
+    .bold{
+      font-weight: bold;
+    }
+    .fontSize{
+      font-size: 1.5em;
+    }
+    .overviewText{
+      padding: 40px 10px 30px 20px;
+      font-family: 'Slabo 27px', serif;      
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+    .bgUp{
+      min-height: 4em;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)); 
+    }
+    .bgDown{
+      min-height: 4em;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+    }
+    .smallImg{
+      width: 90%;
+      height: auto;
+      text-align: center;
+      transition: all 0.4s ease 0s;
+    }
+    .smallImg:hover{        
+      position: relative;        
+      width: 88%;
+    }
+    #mainText{
+      padding-left: 30px;
+      color: #CCCCCC;
+    }
+    #techInfo{
+      background-color: rgba(0, 0, 0, 0.8);
+      color: #CCCCCC;      
+      padding-top: 10px;
+      text-align: left;
+      padding-bottom: 6px;
+    }
+    .linkColor{
+      color: #FF704D;
+    }
+    a.linkColor:hover{
+      color: #FF5930;
+    }
+    a.linkColor:focus{
+      color: #B23E22;
+    }
+    .mC{
+      margin: 4% 0 4% 0;
+    }
+    .marginMedia{
+      margin-top: 4.5%;
+    }
+    .infoText{
+      color:white;
+    }
+    #carousel-details{
+      color:white;
+    }
+    .thumbnail{
+      border:0;
+      box-shadow:0;
+      border-radius:0;
+      padding: 0;
+    }
+    .img-thumbnail{
+      border:0;
+      box-shadow:0;
+      border-radius:0;
+    }
+    .detailsImgWeapons{
+      padding: 0 0 0 30px;
+      height: 300px;
+    }
+    .detailsImg{
+      margin: 10px 0 10px 0;
+      padding: 0 0 0 30px;
+      height: 210px;
+    }
+    .wtitle{
+      text-align: center;
+      font-family: "Slabo 27px", serif;
+      margin-top: 0px;
+      color:white;
+    }
+    .weaponText{      
+      padding: 3% 15px 5px 20px;
+    }
+    .enemiesTextR{    
+      padding: 3% 15px 5px 20px;
+      z-index: 1;
+    }
+    .enemiesTextL{    
+      padding: 3% 15px 5px 20px;
+      z-index: 1;
+    }
+    #footer{
+      margin-top: -1px;
+      background-color: #000000;
+      width: 100%;
+      padding: 30px;
+    }
+    .myBtn{
+      background-color:#B82E00;
+      border-color: #B82E00;
+    }
+    #footerBrand{
+
+    }
+    #footerBrandImage{
+      max-width: 200px;
+      height: auto;
+      margin-left: -3px;
+    }
+    .footerB{
+      margin-top: 20px;
+    }
+    .linkFooter{
+      color: #FF704D;
+    }
+    a.linkFooter:hover{
+      color: #FF5930;
+    }
+    a.linkFooter:focus{
+      color: #B23E22;
+    }
+    .navFooter{
+      color: #B23E22;
+      font-size: 1.5em;
+      padding: 9px 0 0 0;
+    }    
+    #footerBrandImage{
+      margin: 0 0 0 10px;
+    }
+    .alr{
+      margin-top: 30px;
+    }
+    </style>
+
+  </head>
+  <body data-spy="scroll" data-target=".navbar-collapse">
+
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">         
+          <div class="navbar-header">            
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" id="brand" href="#home">
+              <img id="brandImage" alt="Brand" src="images/icon/iconNew.png">
+            </a>
+          </div>
+          <div class="collapse navbar-collapse">           
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#home">Overview</a></li>
+              <li><a href="#weapons">World Details</a></li>
+<!--               <li><a href="#creatures">Creatures</a></li> -->
+              <li><a href="#media">Media</a></li>
+            </ul>
+          <form class="navbar-form navbar-right">
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="Enter Email">
+            </div>            
+            <button type="submit" class="btn btn-success myBtn">Sign Up</button>
+          </form>   
+          </div> 
+      </div>
+    </div>  
+
+    <div id="main" class="container contentContainer">
+      <div id="home" class="container contentContainer">
+        <div class="row marginTop">
+          <div class="col-md-5 col-md-offset-1">
+            <div class="title">
+              <a href="https://www.playstation.com/en-us/games/bloodborne-ps4" target="_blank">
+                <img id="titleImg" src="images/title.png" alt="Bloodborne" > 
+              </a>
+            </div>
+          </div>
+          <div id="techInfo" class="col-md-3 col-md-offset-3">
+            <p><b>Platform:</b> <span class="infoText">PS4</span></p>
+            <p><b>Genre:</b>  <span class="infoText">Action / Role Playing Games (RPG)</span></p>
+            <p><b>Release date:</b> <span class="infoText">March 25, 2015</span></p>
+            <p><b>Official website:</b> <a href="https://www.playstation.com/en-us/games/bloodborne-ps4" target="_blank" class="linkColor"> North America</a>, <a href="http://www.jp.playstation.com/scej/title/bloodborne" target="_blank" class="linkColor">Japan</a></p>
+          </div>
+        </div>  
+        <div class="row">
+          <div class="col-md-12 hidden-xs bgUp"></div>
+        </div>
+        <div class="row overviewText">          
+          <div class="col-md-7 noPadding">
+            <!-- <div class="row ">
+              <div class="col-md-10 col-md-offset-2 col-lg-6 col-lg-offset-4">
+                <img src="images/land1.jpg" alt="Land" class="smallImg">
+              </div>  
+              <div class="col-md-10 col-md-offset-2 col-lg-6 col-lg-offset-4">
+                <img src="images/land2.jpg" alt="Land" class="smallImg">
+              </div>  
+              <div class="col-md-10 col-md-offset-2 col-lg-6 col-lg-offset-4">
+                <img src="images/land3.jpg" alt="Land" class="smallImg">
+              </div>  
+            </div> -->
+
+            <div id="carousel-main" class="carousel slide" data-ride="carousel">              
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-main" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-main" data-slide-to="1"></li>
+                <li data-target="#carousel-main" data-slide-to="2"></li>
+                <li data-target="#carousel-main" data-slide-to="3"></li>
+                <li data-target="#carousel-main" data-slide-to="4"></li>
+              </ol>
+              <div class="carousel-inner carouselImg" role="listbox">
+                <div class="item active">
+                  <img class="carouselImg" src="images/land1.jpg" alt="1">
+                  <div class="carousel-caption">                    
+                  </div>
+                </div>
+                <div class="item">
+                  <img class="carouselImg" src="images/land2.jpg" alt="2">
+                  <div class="carousel-caption">                   
+                  </div>
+                </div>
+                <div class="item">
+                  <img class="carouselImg" src="images/land3.jpg" alt="3">
+                  <div class="carousel-caption">                    
+                  </div>
+                </div>
+                <div class="item">
+                  <img class="carouselImg" src="images/land4.jpg" alt="4">
+                  <div class="carousel-caption">                    
+                  </div>
+                </div>
+                <div class="item">
+                  <img class="carouselImg" src="images/land5.jpg" alt="5">
+                  <div class="carousel-caption">                    
+                  </div>
+                </div>                
+              </div>
+              <a class="left carousel-control" href="#carousel-main" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#carousel-main" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-5" id="mainText" >
+              <h2 class="marginBottom marginOnTop">Welcome to the Cursed Land</h2>
+              <p class="lead">Throughout the ages, the city of Yharnam has lain under an ancient curse; a nightmare known only as the Scourge of the Beast.</p>
+              <p class="lead">The curse infects the city’s inhabitants, making those affected lose all sense of reason and humanity, transforming them into hideous creatures that stalk the streets. Streets which are darkly sinister – but at the same time hauntingly beautiful.</p>
+              <p class="lead">Yharnam’s only hope are the Hunters – guardians who rise up to cleanse the terrifying streets night after night.</p>
+          </div>            
+        </div>
+        <div class="row bgDown">
+          <div class="col-md-12 hidden-xs"></div>
+        </div> 
+
+        <!-- <div class="row borderDownRow">
+          <div class="col-md-12 borderDown"></div>
+        </div> -->
+      </div>
+
+      <!-- <div class="border">
+      </div> -->
+
+      <div id="weapons" class="container contentContainer">
+
+        <!-- <div class="row borderUpRow">
+          <div class="col-md-12 borderUp"></div>
+        </div> -->
+
+        <div class="row marginOnTop marginMedia">
+          <div class="col-md-12 hidden-xs bgUp"></div>
+        </div>
+
+        <div class="row backgroundTransW">
+
+          <div class="col-md-12">
+              <div class="tabpanel">
+                <ul class="nav nav-pills" id="detailsTab" role="tablist">
+                  <li class="active" role="presentation"><a class="styleW" href="#characters" aria-controls="characters" rol="tab" data-togle="pill">ENEMIES</a></li>
+                  <li role="presentation"><a class="styleW" href="#weaponsTab" aria-controls="weaponsTab" rol="tab" data-togle="pill">WEAPONS</a></li>
+                </ul>
+              </div>
+          </div>
+
+          <div class="col-md-12 marginBottom">
+             <div class="tab-content" >
+              <div role="tabpanel" class="tab-pane active" id="characters">
+                <div class="row marginTop">
+
+                  <div id="carousel-enemies" class="carousel slide" data-ride="carousel">              
+                    <!-- <ol class="carousel-indicators">
+                      <li data-target="#carousel-weapon" data-slide-to="0" class="active"></li>
+                      <li data-target="#carousel-weapon" data-slide-to="1"></li>
+                      <li data-target="#carousel-weapon" data-slide-to="2"></li>
+                      <li data-target="#carousel-weapon" data-slide-to="3"></li>
+                      <li data-target="#carousel-weapon" data-slide-to="4"></li>
+                      <li data-target="#carousel-weapon" data-slide-to="5"></li>
+                    </ol> -->
+                    <div class="carousel-inner carouselImg" role="listbox">
+                      <div class="item active">
+                        <div class="row enemiesCarouselContainer">
+                          <div class="col-md-4 col-md-offset-1 enemiesTextR">
+                            <h3 class="textColor">Cleric Beast</h3>
+                            <p class="textColor">The plague that has stricken Yharnam has left many of Yharnam’s residents in various states of transformation into all manner of savage beasts, but the Cleric Beast is undoubtedly one of the largest malformed beasts that hunters are bound to encounter. This creature’s emaciated form belies its immense power, and its piercing cry will make even a hardened hunter think twice.</p>
+                          </div>
+                          <div class="col-md-6 noPaddingLeft">
+                            <img id="CB" class="enemiesImgR" src="images/enemies/clericBeast.png" alt="3">
+                          </div> 
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="row enemiesCarouselContainer">
+                          <div class="col-md-6 noPaddingLeft">
+                            <img class="enemiesImgL" src="images/enemies/bloodStarvedBeast.png" alt="3">
+                          </div> 
+                          <div class="col-md-4 col-md-offset-1 enemiesTextL">
+                            <h3 class="textColor">Blood-Starved Beast</h3>
+                            <p class="textColor">A malformed creature whose skin has all peeled off. It’s unknown how the Blood-Starved Beast ended up looking like this, but it is nevertheless very dangerous and exhibits nimble, aggressive movements that are irregular and hard to predict.</p>
+                          </div>                          
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="row enemiesCarouselContainer">
+                          <div class="col-md-4 col-md-offset-1 enemiesTextR">
+                            <h3 class="textColor">Hemwick Witch</h3>
+                            <p class="textColor">On the outskirts of Yharnam lies a town called Hemwick, home to gloomy and deformed gravekeeper hags. In the depths of Hemwick lies a large old manor, inhabited by a crazy old woman. Night after night, this old woman loses herself in a strange ritual. Supposedly because of this mysterious rite, she has taken to collecting eyeballs, which she proudly wears for all to see.</p>
+                          </div>
+                          <div class="col-md-6 noPaddingLeft">
+                            <img class="enemiesImgR" src="images/enemies/witch.png" alt="3">
+                          </div> 
+                        </div>
+                      </div>                     
+                      <div class="item">
+                        <div class="row enemiesCarouselContainer">
+                          <div class="col-md-6 noPaddingLeft">
+                            <img class="enemiesImgL" src="images/enemies/watchDog.png" alt="3">
+                          </div> 
+                          <div class="col-md-4 col-md-offset-1 enemiesTextL">
+                            <h3 class="textColor">Watch Dog of the Old Lords</h3>
+                            <p class="textColor">The Watchdog of the Old Lords is an enormous fire-elemental dog. The beast has flesh so deeply seared by its own flames that large portions of meat and skin are missing, exposing its bones. The Hellhound attacks the player with physical attacks such as body slams and head bashes, as well as a bark attack that emits a burst of flames.</p>
+                          </div>
+                          
+                        </div>
+                      </div> 
+                       <div class="item">
+                        <div class="row enemiesCarouselContainer">
+                          <div class="col-md-4 col-md-offset-1 enemiesTextR">
+                            <h3 class="textColor">Darkbeast</h3>
+                            <p class="textColor">The long, sinuous body of this beast is comprised almost entirely of bones. It attacks its victims with jerky, erratic movements, while discharging electrical currents through its twisted, ancient body. With its bony form and a wrinkle-covered skull, people say this beast must be very old, very ancient.</p>
+                          </div>                          
+                          <div class="col-md-6 noPaddingLeft">
+                            <img class="enemiesImgR" src="images/enemies/darkBeast.png" alt="3">
+                          </div>
+                        </div>
+                      </div>                                    
+                    </div>
+                    <a class="left carousel-control" href="#carousel-enemies" role="button" data-slide="prev">
+                      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-enemies" role="button" data-slide="next">
+                      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+               <div role="tabpanel" class="tab-pane" id="weaponsTab">
+                <div class="row marginTop">
+
+                  <div id="carousel-weapon" class="carousel slide" data-ride="carousel">              
+
+                    <div class="carousel-inner carouselImg" role="listbox">
+                      <div class="item active">
+                        <div class="row weaponCarouselContainer">
+                          <div class="col-md-5 col-md-offset-2">
+                            <img class="weaponImg" src="images/weapons/sawcleaver.png" alt="3">
+                          </div>
+                          <div class="col-md-4 weaponText">
+                            <h3 class="textColor">Saw Cleaver</h3>
+                            <p class="textColor">This iconic hunter weapon is a product of local Yarnahm craftsmen. In its close-range form, the Saw Cleaver rapidly cuts through flesh and bone.</p>
+                            <p class="textColor">When articulated, the long shaft greatly extends the weapon’s attack distance for heavier, more devastating blows.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="row weaponCarouselContainer">
+                          <div class="col-md-5 col-md-offset-2">
+                            <img class="weaponImg" src="images/weapons/HunterAxe.png" alt="3">
+                          </div>
+                          <div class="col-md-4 weaponText">
+                            <h3 class="textColor">Hunter Axe </h3>
+                            <p class="textColor">Powerful in its shortened form. But when the handle is extended to its full length, its reach and area attacks are almost unparalleled. This combination of range and wide, sweeping attacks allows hunters to inflict damage on multiple enemies simultaneously, making it a solid weapon for both crowd control and assaults on single targets alike.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="row weaponCarouselContainer">
+                          <div class="col-md-5 col-md-offset-2">
+                            <img class="weaponImg" src="images/weapons/HunterBlunderbuss.png" alt="3">
+                          </div>
+                          <div class="col-md-4 weaponText">
+                            <h3 class="textColor">Hunter Blunderbuss</h3>
+                            <p class="textColor">One of the standard guns from the workshop that hunters use to hunt beasts, the wide-barreled blunderbuss fires scatter-shots. The major role of a gun in beast hunting is to use its impact to deal with the swift movement of beasts. With a wide area of fire, the Bluderbuss' scattered shots make it easier to hit a target and is more efficient when dealing with closely-grouped crowds.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="row weaponCarouselContainer">
+                          <div class="col-md-5 col-md-offset-2">
+                            <img class="weaponImg" src="images/weapons/pistol.png" alt="3">
+                          </div>
+                          <div class="col-md-4 weaponText">
+                            <h3 class="textColor">Beast Hunter Pistol</h3>
+                            <p class="textColor">A classic hand-crafted weapon employed by many hunters, the Beast Hunter Pistol fires much more quickly than the blunderbuss, making it well-suited for counter-attacks and last-second blasts to stagger enemies, leaving them open to devastating Visceral Attacks.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="row weaponCarouselContainer">
+                          <div class="col-md-5 col-md-offset-2">
+                            <img class="weaponImg" src="images/weapons/threadedcane.png" alt="3">
+                          </div> 
+                          <div class="col-md-4 weaponText">
+                            <h3 class="textColor">Threaded Cane</h3>
+                            <p class="textColor">A perfect example that not everything in Bloodborne is as it seems, this cane is a formidable weapon on its own, but by triggering a special mechanism, the built-in blades separate allowing the user to wield it like a whip. Seeing this weapon disguised as a cane brought to bear against beasts in both forms during combat is a true sight to behold, and is preferred by certain hunters.</p>
+                          </div>
+                        </div>
+                      </div> 
+                      <div class="item">
+                        <div class="row weaponCarouselContainer">
+                          <div class="col-md-5 col-md-offset-2">
+                            <img class="weaponImg" src="images/weapons/kirkhammer.png" alt="3">
+                          </div>
+                          <div class="col-md-4 weaponText">
+                            <h3 class="textColor">Kirkhammer</h3>
+                            <p class="textColor">Out of all of the transforming weapons employed by hunters, the Kirkhammer is especially popular among hunters associated with the Church of Medicine. It features two drastically methods of attack: a nimble silver sword and a giant stone maul - the latter being very indicative of the Church’s stance against beasts.</p>
+                          </div>
+                        </div>
+                      </div>                
+                    </div>
+                    <a class="left carousel-control" href="#carousel-weapon" role="button" data-slide="prev">
+                      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-weapon" role="button" data-slide="next">
+                      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                 </div>               
+                </div>                                          
+              </div>
+            </div> 
+           </div>       
+        </div>
+        <div class="row ">
+          <div class="col-md-12 hidden-xs bgDown "></div>
+        </div>
+
+        <!-- <div class="row borderDownRow">
+          <div class="col-md-12 borderDown"></div>
+        </div> -->
+      </div>
+
+      <!-- <div class="border">
+      </div> -->
+
+      <div id="media" class="container contentContainer">  
+
+       <!--  <div class="row borderUpRow">
+          <div class="col-md-12 borderUp"></div>
+        </div>    -->   
+          
+        <div class="row marginMedia">
+          <div class="col-md-12 hidden-xs bgUp"></div>
+        </div>
+        <div class="row backgroundTrans">
+          <div class="col-md-12">
+            <div class="tabpanel totalHeight">
+              <ul class="nav nav-pills" id="myTab" role="tablist">
+                <li class="active" role="presentation"><a class="styleA" href="#trailers" aria-controls="trailers" rol="tab" data-togle="pill">TRAILERS</a></li>
+                <li role="presentation"><a class="styleA" href="#soundtrack" aria-controls="soundtrack" rol="tab" data-togle="pill">SOUNDTRACK</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-12 mC">
+           <div class="tab-content" id="mediaContent">
+            <div role="tabpanel" class="tab-pane active mediaContent-tab-pane" id="trailers">
+              <div class="row totalHeight mediaRow">
+                <div class="col-md-7 pleerContainer">
+                  <iframe class="pleer" src="https://www.youtube.com/embed/G203e1HhixY" frameborder="0" allowfullscreen></iframe>
+                </div>
+
+                <div class="col-md-5 pleerAddon">
+                  <h2><span class="glyphicon glyphicon-film"></span> E3 2014 Trailer</h2>
+                  <p class="lead">Face your fears as you search for answers in the ancient city of Yharnam, now cursed with a strange endemic illness spreading through the streets like wildfire. Danger, death and madness lurk around every corner of this dark and horrific world, and you must discover its darkest secrets in order to survive.</p>
+                </div>                          
+              </div>
+            </div>
+            <div role="tabpanel" class="tab-pane mediaContent-tab-pane" id="soundtrack">
+              <div class="row totalHeight mediaRow">
+                <div class="col-md-7 pleerContainer">
+                  <iframe class="pleer" src="https://www.youtube.com/embed/DaoyKECQnPw?list=PLKzg0DeoAjD-cGZOEspgvDGpFal8S2aS-" frameborder="0" allowfullscreen></iframe>
+                </div>
+
+                <div class="col-md-5 pleerAddon">
+                  <h2><span class="glyphicon glyphicon-music"></span> Bloodborne OST</h2>
+                  <p class="lead">The Hunter, from the Bloodborne Soundtrack.
+                  Composer: Ryan Amon
+                  ©2015 Sony Computer Entertainment Inc. All Rights Reserved.</p>
+                </div>
+              </div>
+            </div>
+          </div> 
+         </div>       
+        </div>
+        <div class="row ">
+          <div class="col-md-12 hidden-xs bgDown"></div>
+        </div>
+        <!-- <div class="row borderDownRow">
+          <div class="col-md-12 borderDown"></div>
+        </div> -->
+      </div>  
+    <div>  
+
+    <div class="container" id="footer">      
+      <div class="row">
+        <div class="col-md-4 col-md-offset-1">
+          <form class="navbar-form navbar-left">
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="Enter Email">
+            </div>            
+            <button type="submit" class="btn btn-success myBtn">Sign Up</button>
+          </form>
+        </div> 
+        <div class="col-md-4 col-md-offset-1">
+          <p class="navFooter">
+            <a class="linkFooter" href="#home">Overview</a> |
+            <a class="linkFooter" href="#weapons">World Details</a> |
+            <a class="linkFooter" href="#media">Media</a>
+          </p>  
+        </div>     
+      </div>  
+      <div class="row">
+        <div class="col-md-4 col-md-offset-1 footerB">
+          <p class="lead textColor">
+          <a id="footerBrand" href="#home">
+              <img id="footerBrandImage" alt="Brand" src="images/icon/iconNewW.png">
+          </a>               
+          </p> 
+        </div>
+        <div class="col-md-5 col-md-offset-1">
+          <p class="lead textColor alr">
+            © 2015 GameInspiration. All rights reserved.
+          </p>
+        </div>
+      </div>   
+    </div>  
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script>
+      $(".contentContainer").css("min-height",$(window).height());
+      // $("#footer").css("height",$(window).height()*0.2);
+
+      function getRandomInt(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+      }
+
+      var pictureNumber = getRandomInt(1, 4);
+
+      // $("#main").css("background-image",'url("images/background/main'+pictureNumber+'.jpg")');
+
+      $(".pleer").css("min-height",$(window).height()*0.45); 
+      $(".weaponCarouselContainer").css("min-height",$(window).height()*0.5);
+      $(".weaponImg").css("max-height",$(window).height()*0.5);
+      $(".weaponImg").css("max-width",$(window).width()*0.95);
+
+      $(".enemiesCarouselContainer").css("min-height",$(window).height()*0.5);
+      $(".enemiesImgR").css("max-height",$(window).height()*0.5);
+      $(".enemiesImgL").css("max-height",$(window).height()*0.5);
+
+      $("#CB").css("margin-left", -($(window).height()*0.1));
+
+      var totalheight=0;
+      $(".totalHeight").each(function() {
+        totalheight += $(this).outerHeight();
+      });   
+
+      $('#myTab a').click(function (e) {
+        e.preventDefault()
+        $(this).tab('show')
+      });
+
+      $('#detailsTab a').click(function (e) {
+        e.preventDefault()
+        $(this).tab('show')
+      });
+
+      $("#carousel-weapon").carousel({
+        interval:10000
+      });
+      $("#carousel-enemies").carousel({
+        interval:10000
+      });
+      $("#carousel-deweapon-one").carousel({
+        interval:10000
+      });
+    </script>
+  </body>
+</html>
